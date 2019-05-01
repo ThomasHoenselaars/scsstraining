@@ -215,6 +215,30 @@ module.exports = (env = {}, argv) => {
             removeStyleLinkTypeAttributes: true
           }
         }),
+        new plugins.html({
+          template: "create-profile.html",
+          filename: "create-profile.html",
+          minify: {
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true
+          }
+        }),
+        new plugins.html({
+          template: "add-education.html",
+          filename: "add-education.html",
+          minify: {
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true
+          }
+        }),
+        new plugins.html({
+          template: "add-experience.html",
+          filename: "add-experience.html",
+          minify: {
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true
+          }
+        }),
 
         new plugins.progress({
           color: "#5C95EE"
