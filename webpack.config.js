@@ -183,6 +183,14 @@ module.exports = (env = {}, argv) => {
             removeStyleLinkTypeAttributes: true
           }
         }),
+        new plugins.html({
+          template: "login.html",
+          filename: "login.html",
+          minify: {
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true
+          }
+        }),
 
         new plugins.progress({
           color: "#5C95EE"
